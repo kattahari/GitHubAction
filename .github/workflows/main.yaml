@@ -11,6 +11,8 @@
         with:
           node-version: '16'
       - name: Install Dependencies
+      - name: KT NPM
+        uses: kloudtek/kt-gh-action-npm@0.8.2
         run: npm install
       - name: Run Tests
         run: npm test
